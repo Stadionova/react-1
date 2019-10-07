@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -19,4 +19,51 @@
 
 .App-link {
   color: #09d3ac;
+} */
+
+.app-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  /* это значит, что все потомки, которые лежат непосредственно
+  в div: header, nav, div - будут вести себя как grid элементы */
+  
+  /* пишу как и что будет в строках и колонках */
+  grid-template-areas: 
+  'h h' /* это значит, что я займу две колонки */
+  'n c'; /* nav займёт одну колонку, content займёт вторую колонку */
+  /* говорим сколько строк у нас будет:
+  типа одна строка для хэдера,
+  вторая строка для всего остального */
+  /* то есть первая строка высотой 60px, 
+  вторая строка равна одной фракции 1fr */
+  grid-template-rows:  60px 1fr;
+  /* колонок тоже будет две: одна для сайдбара слева, 
+  вторая для всего остального справа */
+  /* одна колонка будет занимать 2 фракции,
+  вторая = 10 фракциям (равных частей) */
+  grid-template-columns: 2fr 10fr;
+  /* grid-gap - это растояние между элементами */
+  /* grid-gap: 10px; */
 }
+
+.header img {
+  width: 60px;
+}
+
+.header {
+  /* зададим псевдонимы */
+  grid-area: h;
+  background-color: blueviolet;
+}
+
+.nav {
+  grid-area: n;
+  background-color: brown
+}
+
+.content {
+  grid-area: c;
+  background-color: green;
+}
+
