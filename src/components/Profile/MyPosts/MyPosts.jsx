@@ -1,14 +1,22 @@
 import React from 'react';
 import s from './MyPosts.module.css';
+import Post from './Posts/Post';
 
 const MyPosts = () => {
-    return <div>
-        my posts
+    return (
         <div>
-            new post
+            my posts
+        <div>
+                new post
         </div>
-        <div className={s.posts}>
-            <div className={s.item}>
+            <div className={s.posts}>
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                {/* <div className={s.item}>
                 <img src="https://hornews.com/images/news_large/c1d4b2b8ec608ea72764c5678816d5c9.jpg"></img>
                 post 1
                 </div>
@@ -17,9 +25,10 @@ const MyPosts = () => {
                 </div>
             <div className={s.item}>
                 post 3
-                </div>
+                </div> */}
+            </div>
         </div>
-    </div>
+    )
 }
 
 export default MyPosts;
