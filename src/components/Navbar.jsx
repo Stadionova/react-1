@@ -1,13 +1,28 @@
 import React from 'react';
-import './Navbar.css';
+import s from './Navbar.module.css';
+
+// у нас есть объект classes,
+// имя которого можно написать любое 
+// назову его коротко: s
+
+// let classes = {
+//     'nav': 'Navbar_nav__3ou9Q',
+//     'item': 'Navbar_item__3qaF3',
+// }
+
+// в котором свойствами являются названия наших тегов и классов
+// а значением является уникальный сгенерированный класс
 
 const Navbar = () => {
-    return <nav className='nav'>
-        <div className='item'><a>Profile</a></div>
-        <div className='item'><a>Message</a></div>
-        <div className='item'><a>News</a></div>
-        <div className='item'><a>Music</a></div>
-        <div className='item'><a>Settings</a></div>
+    // здесь обращаюсь к свойству объекта classes
+    // по имени тега nav
+    // className={classes.nav}
+    return <nav className={s.nav}>
+        <div className={s.item}><a>Profile</a></div>
+        <div className={s.item}><a>Message</a></div>
+        <div className={s.item}><a>News</a></div>
+        <div className={s.item}><a>Music</a></div>
+        <div className={s.item}><a>Settings</a></div>
     </nav>
 }
 
