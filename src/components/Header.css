@@ -1,0 +1,9 @@
+.header img {
+    width: 60px;
+}
+  
+.header {
+    /* зададим псевдонимы */
+    grid-area: h;
+    background-color: blueviolet;
+}

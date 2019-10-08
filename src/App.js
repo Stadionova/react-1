@@ -18,11 +18,6 @@ const App = () => {
       {/* auto import подключён, 
       то есть сверху не нужно вручную писать import,
       достаточно тут тег написать через auto import */}
-      {/* <Technologies /> */}
-      {/* <Header /> */}
-      {/* <Technologies /> */}
-      {/* <Footer /> */}
-      {/* <Footer /> */}
     </div>
   );
 }

@@ -46,28 +46,3 @@
   /* grid-gap - это растояние между элементами */
   /* grid-gap: 10px; */
 }
-
-.header img {
-  width: 60px;
-}
-
-.header {
-  /* зададим псевдонимы */
-  grid-area: h;
-  background-color: blueviolet;
-}
-
-.nav {
-  grid-area: n;
-  background-color: brown
-}
-
-.content {
-  grid-area: c;
-  background-color: green;
-}
-
-.content img {
-  width: 100%;
-}
-
