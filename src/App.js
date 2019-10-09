@@ -9,21 +9,33 @@ import Dialogs from './components/Dialogs/Dialogs';
 // import Header from './Header.js';
 // import Footer from './Footer';
 // import Technologies from './Technologies';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className="app-wrapper">
-      <Header />
-      <Navbar />
-      {/* <Profile /> */}
-      {/* создаём вторую страничку Messages
+    // всё наше приложение нужно обрамить тегом:
+    // Route теги мы можем использовать только внутри компоненты BrowserRouter
+    <BrowserRouter>
+      <div className="app-wrapper">
+        <Header />
+        <Navbar />
+        {/* создаём вторую страничку Messages
       поэтому пока закоментила Profile страничку
       и создаю новую Dialogs */}
-      <div className='app-wrapper-content'><Dialogs /></div>
-      {/* auto import подключён, 
+        <div className='app-wrapper-content'>
+          {/* передаю названия компонент для первого и второго route */}
+          {/* решение, какую компоненты отрисовать, будет принято в зависимости от урла в браузерной строке */}
+          {/* то есть нужно как-то этот урл анализировать */}
+          <Route component={Dialogs} />
+          <Route component={Profile} />
+          {/* <Profile /> */}
+          {/* <Dialogs /> */}
+        </div>
+        {/* auto import подключён, 
       то есть сверху не нужно вручную писать import,
       достаточно тут тег написать через auto import */}
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
