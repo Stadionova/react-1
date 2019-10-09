@@ -20,6 +20,7 @@ const Navbar = () => {
     return (
         <nav className={s.nav}>
             {/* указала в ссылках путь к созданным страницам profile & dialogs */}
+            {/* ссылки стали кликабельными в навигационной панели */}
             <div className={s.item}><a href='/profile'>Profile</a></div>
             <div className={s.item}><a href='/dialogs'>Message</a></div>
             <div className={s.item}><a>News</a></div>
