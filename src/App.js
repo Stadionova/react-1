@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
+import Dialogs from './components/Dialogs/Dialogs';
 // import Header from './Header';
 // import Header from './Header.js';
 // import Footer from './Footer';
@@ -14,7 +15,11 @@ const App = () => {
     <div className="app-wrapper">
       <Header />
       <Navbar />
-      <Profile />
+      {/* <Profile /> */}
+      {/* создаём вторую страничку Messages
+      поэтому пока закоментила Profile страничку
+      и создаю новую Dialogs */}
+      <div className='app-wrapper-content'><Dialogs /></div>
       {/* auto import подключён, 
       то есть сверху не нужно вручную писать import,
       достаточно тут тег написать через auto import */}

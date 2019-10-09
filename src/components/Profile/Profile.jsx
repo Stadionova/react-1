@@ -4,7 +4,8 @@ import MyPosts from './MyPosts/MyPosts';
 
 const Profile = () => {
     return (
-        <div className={s.content}>
+        // вынесла className={s.content} в App.css (для всех модулей)
+        <div>
             <div>
                 <img src="https://bipbap.ru/wp-content/uploads/2017/10/0_8eb56_842bba74_XL-640x400.jpg"></img>
             </div>
