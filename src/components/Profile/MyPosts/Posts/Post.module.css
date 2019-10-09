@@ -7,3 +7,8 @@
     height: 50px;
     border-radius: 30px;
 }
+
+.like img {
+    width: 15px;
+    height: 15px;
+}

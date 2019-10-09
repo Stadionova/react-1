@@ -11,7 +11,7 @@ const Post = (props) => {
             {/* post 1 */}
             {/* в фигурных скобках обращаемся к js объекту */}
             {props.message}
-            <div><span>like</span></div>
+            <div className={s.like}><span>{props.like}</span><img src="http://inkscape.paint-net.ru/img/img02/1020041.png" alt="#" /></div>
         </div>
         //     <div className={s.item}>
         //         post 2
